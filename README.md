@@ -16,5 +16,4 @@ A better way to do this with the current hardware and while respecting licensing
 1. create a GPIO extension board for the H4M that has a DVSI AMBE 3000 or AMBE 4000 chip on board
 2. modify the DSD RX app so it sends the DMR voice packets via GPIO to the DVSI chip
 3. DVSI chip decodes the audio and sends back audible PCM / WAV data in real time
-
-I have only researched this option lightly and found that the H4M GPIO only supports I2C so bandwidth could possible make this 'better way' impossible with the current hardware.
+4. I researched this option lightly and found that the H4M GPIO only supports I2C so limited bandwidth may make it impossible to listen to audio real-time even while using a DVSI chip via GPIO
