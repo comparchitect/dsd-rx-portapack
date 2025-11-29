@@ -1,0 +1,7 @@
+MBELIB decoder is shipped without mbelib-derived voice decoding tables or code.
+
+To enable decoding you must obtain mbelib yourself and rebuild the external MBELIB baseband
+using the provided fetch/patch script (see repository docs). By installing mbelib you accept
+its terms of use. The maintainers of this firmware do not distribute mbelib.
+
+If you do not install mbelib, MBELIB will remain stubbed and will not decode audio.
