@@ -6,8 +6,10 @@ This repository contains 2 apps for the Portapack mayhem-firmware:
 
 DSD RX
 
-This is effectively a slimmed down port of with https://github.com/szechyjs/dsd that only currently supports DMR. It should be relatively easy to create more basebands that could perform the same voice data extractions for other protocols like NXDN. DSD RX is a fairly simple app currently: it tunes to a frequency specificed by the user and extracts any DMR voice packets if the "Log to SD" checkbox is checked.
+This is effectively a slimmed down port of https://github.com/szechyjs/dsd that only currently supports DMR. It should be relatively easy to create more basebands that could perform the same voice data extractions for other protocols like NXDN. DSD RX is a fairly simple app currently: it tunes to a frequency specificed by the user and extracts any DMR voice packets if the "Log to SD" checkbox is checked.
 
 MBELIB
 
-This app can open the .ambe files stores by the DSD RX app and decode them in into audible .wav files. The app can also play the .wav files. Main message here is that this is just a proof of concept. The decoding is VERY slow on the H4M hardware. It can take 1 minute to decode 10 seconds of audio. With more powerful hardware (more cores, higher clock speed) it may be possible to decode digital voice modes live. But with the current hardware it is not.
+This app can open the .ambe files stored by the DSD RX app and decode them into audible .wav files. The app can also play the .wav files. Main message here is that this is just a proof of concept. The decoding is VERY slow on the H4M hardware. It can take 1 minute to decode 10 seconds of audio. With more powerful hardware (more cores, higher clock speed) it may be possible to decode digital voice modes live. But with the current hardware it is not. Also, please note that the codec used by DMR and other digital voice modes is proprietary so any use beyond educational purposes may be prohibited.
+
+A better way to do this with the current hardware limitations:
