@@ -327,7 +327,7 @@ void DSDRxProcessor::process_decided_symbol(uint8_t dibit) {
             match_id = decode_sync_string(sync_window);
         }
 
-        if (match_id == SyncPatternId::DirectTs1Voice || match_id == SyncPatternId::DirectTs1Data) {
+        if (match_id == SyncPatternId::DirectTs1Voice || match_id == SyncPatternId::DirectTs1Data || match_id == SyncPatternId::DirectTs2Voice || match_id == SyncPatternId::DirectTs2Data  || match_id == SyncPatternId::MsVoice || match_id == SyncPatternId::BsVoice || match_id == SyncPatternId::MsData || match_id == SyncPatternId::BsData) {
             carrier_present_ = true;
             sync_search_symbol_count_ = 0;
 
@@ -348,7 +348,7 @@ void DSDRxProcessor::process_decided_symbol(uint8_t dibit) {
             jitter_enabled_ = true;
             dmr_filter_enabled_ = true;
 
-            if (match_id == SyncPatternId::DirectTs1Voice) {
+            if (match_id == SyncPatternId::DirectTs1Voice || match_id == SyncPatternId::DirectTs2Voice || match_id == SyncPatternId::MsVoice || match_id == SyncPatternId::BsVoice) {
                 current_burst_start_absolute_ =
                     (symbol_counter_ >= 90) ? symbol_counter_ - 90 : 0;
                 active_burst_index_ = 0;
