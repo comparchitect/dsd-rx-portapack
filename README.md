@@ -6,7 +6,7 @@ This repository contains 2 apps for the Portapack mayhem-firmware:
 
 DSD RX
 
-This is a simplified port of https://github.com/szechyjs/dsd that only currently supports DMR. It should be relatively easy to create more basebands that could perform the same voice data extractions for other protocols like NXDN. DSD RX is a simple app: it tunes to a frequency specificed by the user and extracts any DMR voice packets if the "Log to SD" checkbox is checked.
+This is a simplified port of https://github.com/szechyjs/dsd that only currently supports DMR. It should be relatively easy to create more basebands that could perform the same voice data extractions for other protocols like NXDN. DSD RX is a simple app: it tunes to a frequency specified by the user and extracts any DMR voice packets if the "Log to SD" checkbox is checked.
 
 MBELIB
 
